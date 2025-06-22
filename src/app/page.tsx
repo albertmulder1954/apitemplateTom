@@ -1,4 +1,5 @@
 import AVGChatBot from '@/components/AVGChatBot'
+import PrivacyPolicySection from '@/components/PrivacyPolicySection'
 import CopyButton from '@/components/CopyButton'
 
 export default function Home() {
@@ -49,21 +50,8 @@ export default function Home() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Privacy Beleid */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                  📄
-                </div>
-                <h3 className="text-lg font-semibold text-gray-800">Privacy Beleid</h3>
-              </div>
-              <p className="text-gray-600 text-sm mb-4">
-                Hulp bij het opstellen, controleren en updaten van je privacy beleid volgens AVG-eisen.
-              </p>
-              <div className="text-xs text-blue-600 font-medium">
-                ✓ Template generatie ✓ Compliance check ✓ Sector-specifiek advies
-              </div>
-            </div>
+            {/* Interactive Privacy Beleid */}
+            <PrivacyPolicySection />
 
             {/* DPIA */}
             <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500 hover:shadow-xl transition-all duration-300">
